@@ -14,7 +14,7 @@ body {
 	position:absolute;
 	width: 246px;
 	height: 77px;
-	background: url("../Image/btn_download_normal.jpg") no-repeat center;
+	background: url("../Image/btn_download_normal.png") no-repeat center;
 	border-style: none;
 	cursor: pointer;
 	top: 71%;
