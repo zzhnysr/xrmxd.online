@@ -4,7 +4,7 @@
 
 body {
 	background-size: 100% 100%;
-	background-image: url("../Image/background.jpg");
+	background-image: url("../Image/background.webp");
 	display: flex;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
