@@ -4,20 +4,73 @@
 
 body {
 	background-size: 100% 100%;
-	background-image: url("../Image/background.webp");
+	background-image: url("../Image/main_background.webp");
 	display: flex;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-position: center;
+}
+
+@media (max-width:1023px) {
+	body {
+		/* background-size: auto 100%; */
+		background-size: cover;
+		background-position: center;
+		background-image: url("../Image/main-background-center.jpg");
+	}
+}
+
+@media (min-width:1023px) and (max-width:1920px) {
+	body {
+		background-size: auto 100%;
+	}
+}
+
+@media (min-width: 1920px) {
+	body {		
+		background-size: 100% 100%;
+		
+	}
+}
+
+.content {
+	height: auto;
+}
+
+.right {
+	width: 277px;
+	background-color: red;
+}
+
+.qr {
+	float: left;
+	width: 277px;
+	height: 377px;
+	position: absolute;
+	right: 20px;
+	top: 20%;
+	background: url("../Image/qr_background.webp") no-repeat center;
+}
+
+.qr_img {
+	height: 180px;
+	width: 180px;
+	background-position: center;
+	background-size: cover;
+	background-image: url("../Image/qr.webp");
+	position: relative;
+	top: 135px;
+	left: 48px;
 }
 
 .btn_download {
 	position:absolute;
 	width: 246px;
 	height: 77px;
-	background: url("../Image/btn_download_normal.png") no-repeat center;
+	background: url("../Image/btn_download_normal.webp") no-repeat center;
 	border-style: none;
 	cursor: pointer;
-	top: 71%;
+	top: 75%;
 	left: 50%;
 	margin-left: -123px;
 }
